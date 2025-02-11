@@ -1,6 +1,6 @@
 services:
   api-server:
-    image: blt24q4/myrestserver:latest # 본인 restserver image 에러 생겨서 강사님것으로 대체
+    image: handonggil/myrestserver:latest
     container_name: myrestserver-container
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-container:3306/${MYSQL_DATABASE}
